@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		09E7F5172D4D0EF800748E86 /* RCTNativeLocalStorage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09E7F5162D4D0EF800748E86 /* RCTNativeLocalStorage.mm */; };
+		09E7F51A2D4D109300748E86 /* NativeLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E7F5192D4D109300748E86 /* NativeLocalStorage.swift */; };
 		0C80B921A6F3F58F76C31292 /* libPods-ReproducerApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-ReproducerApp.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 		09E7F5152D4D0EF800748E86 /* ReproducerApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReproducerApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		09E7F5162D4D0EF800748E86 /* RCTNativeLocalStorage.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTNativeLocalStorage.mm; sourceTree = "<group>"; };
 		09E7F5182D4D0F1300748E86 /* RCTNativeLocalStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTNativeLocalStorage.h; sourceTree = "<group>"; };
+		09E7F5192D4D109300748E86 /* NativeLocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeLocalStorage.swift; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* ReproducerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReproducerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ReproducerApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReproducerApp/Info.plist; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 				09E7F5162D4D0EF800748E86 /* RCTNativeLocalStorage.mm */,
 				09E7F5152D4D0EF800748E86 /* ReproducerApp-Bridging-Header.h */,
 				09E7F5182D4D0F1300748E86 /* RCTNativeLocalStorage.h */,
+				09E7F5192D4D109300748E86 /* NativeLocalStorage.swift */,
 			);
 			path = NativeLocalStorage;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09E7F51A2D4D109300748E86 /* NativeLocalStorage.swift in Sources */,
 				09E7F5172D4D0EF800748E86 /* RCTNativeLocalStorage.mm in Sources */,
 				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
 			);
@@ -394,10 +398,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -466,10 +467,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
